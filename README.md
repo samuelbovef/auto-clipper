@@ -1,169 +1,179 @@
 <div align="center">
   
-  <h1>🎬 AutoClipper v5.0.0</h1>
+  <h1>AutoClipper v5.0.0</h1>
   
-  **Automação Inteligente para Cortes Virais, Legendagem Dinâmica (.ass) e Inteligência Artificial**
+  **Automação Inteligente para Cortes de Vídeo, Legendagem Dinâmica (.ass) e IA**
 
   [![Python](https://img.shields.io/badge/Python-3.10-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
   [![PyTorch](https://img.shields.io/badge/PyTorch-CUDA_12.1-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-  [![Suporte: WhatsApp](https://img.shields.io/badge/Suporte-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5534984241729)
+  [![Suporte](https://img.shields.io/badge/Suporte-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5534984241729)
 
-  Uma ferramenta de código aberto que transforma vídeos longos em clipes curtos (Shorts/Reels/TikTok) de forma 100% autônoma. 
+  Uma ferramenta de código aberto que transforma vídeos longos em clipes curtos (Shorts, Reels, TikTok) de forma automatizada e autônoma. 
 </div>
 
 <br>
 
-O **AutoClipper** utiliza Inteligência Artificial local para detectar picos acústicos de emoção, transcrever áudios com extrema precisão e aplicar legendas cinematográficas avançadas, prontas para monetização. Se você precisa de suporte ou quer falar sobre o projeto, **[clique aqui para me chamar no WhatsApp](https://wa.me/5534984241729)**.
+O **AutoClipper** utiliza inteligência artificial local para detectar picos acústicos, transcrever áudios com alta precisão e aplicar legendas avançadas. Desenvolvido para criadores de conteúdo e editores que buscam escalar sua produção sem depender de APIs de terceiros.
 
 ---
 
-## 📑 Índice
-- [Principais Recursos](#-principais-recursos)
-- [Demonstração](#-demonstração)
-- [Pré-requisitos](#pre-requisitos)
-- [Instalação](#-instalação)
-- [Como Usar](#-como-usar)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Licença](#-licença)
+## Índice
+- [Principais Recursos](#principais-recursos)
+- [Demonstração](#demonstração)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Suporte e Contato](#suporte-e-contato)
+- [Licença](#licença)
 
 ---
 
-## ✨ Principais Recursos
+## Principais Recursos
 
-* 🧠 **Inteligência Artificial Local:** Processamento via `WhisperX` e `PyTorch`, garantindo alinhamento perfeito de palavras sem depender de APIs pagas. Suporte dinâmico a processamento via CPU ou GPU (CUDA).
-* 🎯 **Motores de Decisão Duplos:**
-  * **Modo Emoção:** O "Cérebro Auditivo" utiliza a biblioteca `Librosa` para rastrear ondas sonoras e isolar gritos, risadas ou ênfases verbais, respeitando o silêncio e as pausas naturais.
-  * **Modo Palavras-Chave:** Varredura textual inteligente para cortes focados em nichos específicos.
-* 🎞️ **Legendagem Cinematográfica (.ASS):** Esqueça as legendas estáticas. O motor de renderização aplica matemática espacial para gerar efeitos de *Fade*, *Slide In*, *Bounce (Pop)*, *Flip 3D* e *Shear* programaticamente.
-* ⚙️ **Automação em Lote (Batch):** Capacidade de ler listas de URLs e orquestrar múltiplos vídeos durante a noite, com autolimpeza de arquivos temporários.
-* 🎨 **Pipeline de Color Grading:** Validador integrado de arquivos LUTs (`.cube`) para aplicação de filtros de cor, auxiliando na prevenção de bloqueios de copyright.
+* **Processamento de IA Local:** Utiliza `WhisperX` e `PyTorch` para transcrição e alinhamento perfeito de palavras, sem custo de APIs. Suporte dinâmico para CPU e aceleração via GPU (CUDA).
+* **Motores de Decisão Duplos:**
+  * **Modo Emoção:** O motor acústico utiliza `Librosa` para rastrear ondas sonoras e isolar picos de emoção (ênfases, risadas), respeitando o ritmo e as pausas naturais.
+  * **Modo Palavras-Chave:** Varredura textual para extração de cortes baseados em nichos semânticos.
+* **Legendagem Cinematográfica (.ASS):** Motor de renderização que aplica matemática espacial para gerar efeitos programáticos dinâmicos, como *Fade*, *Slide In*, *Bounce (Pop)*, *Flip 3D* e *Shear*.
+* **Processamento em Lote (Batch):** Capacidade de ler listas de URLs e processar múltiplos vídeos em fila, incluindo rotinas de autolimpeza de arquivos temporários.
+* **Pipeline de Color Grading:** Validador integrado de arquivos LUTs (`.cube`) para aplicação de filtros de cor direto no processamento.
 
 ---
 
-## 🎥 Demonstração
+## Demonstração
 
-Veja como é simples e rápido operar o **AutoClipper v5.0.0** direto do seu terminal:
+A operação do **AutoClipper v5.0.0** é feita diretamente via terminal interativo:
 
-**1. Menu Interativo e Inserção da Mídia** O painel principal oferece opções claras para processos unitários ou em lote. Basta escolher o motor inteligente (ex: Emoções) e colar o link do YouTube.
+**1. Seleção de Mídia e Motor de Corte** 
+<br>Escolha entre processamento único ou em lote, defina o motor inteligente desejado e insira a URL do YouTube.
 
 <img width="939" height="478" alt="Captura de tela 2026-05-11 044736" src="https://github.com/user-attachments/assets/19ad30a5-000b-4bfb-bf77-a7d51a65ad53" />
 
 <br>
 
-**2. Configuração Cinematográfica das Legendas** Você tem controle total sobre a estética visual. Escolha a posição na tela, a densidade de palavras por bloco e aplique dezenas de efeitos de animação dinâmicos (Fade, Slide, Pop, etc.).
+**2. Configuração Estética das Legendas** 
+<br>Controle total sobre a posição na tela, densidade de palavras por bloco e aplicação de efeitos de animação.
 
 <img width="939" height="1018" alt="Captura de tela 2026-05-11 045014" src="https://github.com/user-attachments/assets/81f4f897-1dd2-4ded-9a73-eb9450544414" />
 
 <br>
 
-**3. Pós-Produção e Processamento com IA** Defina ajustes finais para monetização (colorização/edição estrutural) e deixe a máquina trabalhar. O sistema baixa na melhor qualidade, transcreve com WhisperX e executa os cortes automaticamente.
+**3. Processamento Automatizado** 
+<br>O sistema realiza o download na melhor qualidade, transcreve, corta e renderiza o vídeo final de forma autônoma.
 
 <img width="939" height="1016" alt="Captura de tela 2026-05-11 045041" src="https://github.com/user-attachments/assets/69387c3e-d014-4975-85f0-e6eccbee999f" />
 
-## <a id="pre-requisitos"></a> 🛠️ Pré-requisitos
+## Pré-requisitos
 
-Para rodar este projeto localmente, você precisará de:
+Para rodar o ambiente localmente, é necessário:
 
-**1. Python 3.10.x**
-> Versões mais recentes como 3.12 podem causar conflito com as dependências do PyTorch. Certifique-se de marcar a opção *"Add Python to PATH"* durante a instalação do Python.
-
-**2. FFmpeg**
-> Essencial para o processamento de áudio e vídeo. Para não precisar configurar variáveis de ambiente complexas no Windows, basta baixar o `ffmpeg.exe` e o `ffprobe.exe` oficiais e colocá-los dentro de uma pasta chamada `bin/` na raiz deste projeto. O AutoClipper os encontrará automaticamente.
+* **Python 3.10.x:** Versões superiores (como 3.12) podem gerar conflitos com as dependências atuais do PyTorch. Marque a opção *"Add Python to PATH"* durante a instalação.
+* **FFmpeg:** Essencial para o processamento de mídia. No Windows, faça o download do `ffmpeg.exe` e `ffprobe.exe` e coloque-os dentro da pasta `bin/` na raiz do projeto. O sistema os mapeará automaticamente.
 
 ---
 
-## 🚀 Instalação
+## Instalação
 
-Escolha o método que melhor se adapta ao seu perfil.
+### Opção A: Instalação Automática (Windows)
+Recomendado pela praticidade. Cria o ambiente virtual e instala as dependências via script.
 
-### Opção A: Instalação Automática (Plug & Play)
-Recomendado para usuários de Windows que desejam praticidade. O projeto inclui rotinas seguras de automação em lote.
-
-**Passo 1:** Faça o clone do repositório no seu terminal (ou baixe o arquivo ZIP):
+**1.** Clone o repositório:
 ```bash
-git clone [https://github.com/sbf8/auto-clipper.git](https://github.com/sbf8/auto-clipper.git)
+git clone [https://github.com/samuelbovef/auto-clipper.git](https://github.com/samuelbovef/auto-clipper.git)
 
 ```
 
 **Passo 2:** Adicione os binários do FFmpeg na pasta `bin/`.
 
-**Passo 3:** Dê dois cliques no arquivo **`Instalar.bat`**. 
-> Ele fará a verificação da sua versão do Python, criará o ambiente virtual (`venv`) isolado, instalará o PyTorch com suporte a aceleração de hardware (CUDA) e configurará os requisitos automaticamente.
+**Passo 3:** Dê dois cliques no arquivo **`Instalar.bat`**. O script validará o Python, criará o ambiente virtual (venv) e instalará o PyTorch (com CUDA) e os requisitos definidos em requirements.txt.
 
 <br>
 
-### Opção B: Instalação Manual (Avançada)
-Para quem prefere controle total ou utiliza sistemas baseados em Unix (Linux/Mac).
+### Opção B: Instalação Manual (Avançada / Unix)
+Para controle total ou uso em distribuições Linux e macOS.
 
-**Passo 1:** Clone o projeto e entre no diretório:
+**Passo 1:** Clone o repositório e acesse a pasta:
 ```bash
-git clone https://github.com/sbf8/auto-clipper.git
+git clone [https://github.com/samuelbovef/auto-clipper.git](https://github.com/samuelbovef/auto-clipper.git)
 cd auto-clipper
 ```
 
-**Passo 2:** Crie e ative um ambiente virtual:
+**Passo 2:** Crie e ative o ambiente virtual:
 ```bash
 # Windows
 python -m venv venv
 venv\Scripts\activate
 
-# Linux/Mac
+# Linux/macOS
 python3.10 -m venv venv
 source venv/bin/activate
 ```
 
-**Passo 3:** Instale o PyTorch com suporte a CUDA e depois os requisitos:
+**Passo 3:** Instale o PyTorch (CUDA) e os requisitos:
 ```bash
-pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install torch torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 pip install -r requirements.txt
 ```
 
 ---
 
-## 💻 Como Usar
+---
 
-Com o ambiente devidamente instalado, inicie a interface interativa:
+## Como Usar
 
-**Para quem usou a Instalação Automática:**
-Basta dar dois cliques no arquivo **`Iniciar.bat`**.
+Com o ambiente configurado, inicie o orquestrador:
 
-**Para quem prefere o Terminal:**
+* **Via Script (Windows):** Execute o arquivo **`Iniciar.bat`**.
+* **Via Terminal:**
 ```bash
-python src/autoclipper.py
-```
+  python src/autoclipper.py
+  ```
 
-No painel interativo, você poderá:
-1. Colar a URL do vídeo de origem (YouTube).
-2. Selecionar o motor de corte (Emoção ou Palavra-chave).
-3. Configurar a estética das legendas (Blocos de texto, posições e dezenas de efeitos de animação).
-4. *(Opcional)* Adicionar LUTs ou ativar o modo de Super Reels para juntar os cortes.
+Siga as instruções no painel para colar a URL, selecionar o motor de corte e customizar as legendas.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
-A arquitetura foi desenhada para separar a inteligência da mídia bruta:
+A arquitetura separa a lógica de inteligência da manipulação de mídia:
 
 ```text
 auto-clipper/
-├── bin/                 # Coloque o ffmpeg.exe aqui para uso portátil
-├── luts/                # Diretório para os filtros de color grading (.cube)
-├── src/                 # Código-fonte principal (Orquestrador, Inteligência, Estilos)
-├── temp/                # Pasta de trabalho (Limpa automaticamente via menu)
-│   ├── cortes/          # Clipes isolados pré-renderização
-│   ├── legendas/        # Arquivos .ass gerados
-│   └── subs/            # Transcrições JSON (WhisperX)
-├── Instalar.bat         # Automação de setup inteligente (Windows)
-├── Iniciar.bat          # Inicializador de uso diário (Windows)
-└── requirements.txt     # Dependências de alto nível curadas
+├── bin/                 # Diretório para binários (ffmpeg.exe, ffprobe.exe)
+├── luts/                # Diretório para filtros de color grading (.cube)
+├── src/                 # Código-fonte principal (Orquestrador, Motores, Estilos)
+├── temp/                # Diretório de trabalho (Autolimpável)
+│   ├── cortes/          # Clipes isolados em estado bruto
+│   ├── legendas/        # Arquivos .ass renderizados
+│   └── subs/            # Transcrições em JSON (WhisperX)
+├── Instalar.bat         # Script de setup automatizado (Windows)
+├── Iniciar.bat          # Script de inicialização (Windows)
+└── requirements.txt     # Mapeamento de dependências
 ```
 
 ---
 
-## 📜 Licença
+## Como Contribuir
 
-Este projeto é distribuído sob a Licença **MIT**. Você tem a liberdade de usar, modificar e distribuir o código comercialmente, desde que mantenha os avisos de direitos autorais originais.
+Contribuições para o aprimoramento da ferramenta são bem-vindas:
+1. Faça um *Fork* do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
+3. Faça o commit das suas alterações (`git commit -m 'Adicionando nova feature'`)
+4. Faça o push para a branch (`git push origin feature/NovaFeature`)
+5. Abra um *Pull Request*
 
 ---
-*Desenvolvido com dedicação para a comunidade criativa.*
+
+## Suporte e Contato
+
+Para reporte de bugs, dúvidas sobre a configuração do ambiente ou discussões sobre parcerias comerciais, entre em contato:
+
+* **WhatsApp:** [ Suporte ](https://wa.me/5534984241729)
+
+---
+
+## Licença
+
+Distribuído sob a licença **MIT**. É permitida a utilização, modificação e distribuição comercial deste código, desde que mantidos os avisos de direitos autorais originais.
