@@ -7,7 +7,7 @@
   [![Python](https://img.shields.io/badge/Python-3.10-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
   [![PyTorch](https://img.shields.io/badge/PyTorch-CUDA_12.1-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-  [![Suporte](https://img.shields.io/badge/Suporte-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5534984241729)
+  [![Suporte](https://img.shields.io/badge/Central_de_Suporte-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/samuelbovef/suporte)
 
   Uma ferramenta de código aberto que transforma vídeos longos em clipes curtos (Shorts, Reels, TikTok) de forma automatizada e autônoma. 
 </div>
@@ -25,8 +25,8 @@ O **AutoClipper** utiliza inteligência artificial local para detectar picos ac�
 - [Instalação](#instalação)
 - [Como Usar](#como-usar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contato](#contato)
-- [Licença](#licença)
+- [Como Contribuir](#como-contribuir)
+- [Suporte e Serviços](#suporte-e-serviços)
 
 ---
 
@@ -166,14 +166,16 @@ Contribuições para o aprimoramento da ferramenta são bem-vindas:
 
 ---
 
-## Contato
+## Suporte e Serviços
 
-Para reporte de bugs, dúvidas sobre a configuração do ambiente ou discussões sobre parcerias corporativas, acesse nosso portal de suporte clicando no botão abaixo:
+Para negociação de parcerias, serviços de **Consultoria de Implantação** ou atendimento comercial, acesse a minha Central.
 
 <div align="center">
 
-[![Solicitar Chave de Acesso](https://img.shields.io/badge/PORTAL_DE_SUPORTE_E_ACESSO-00FF9C?style=for-the-badge&logo=rocket&logoColor=black&labelColor=1a1a1a)](https://suporte-seriais.pages.dev/)
+[![Central de Atendimento](https://img.shields.io/badge/ACESSAR_CENTRAL_DE_ATENDIMENTO-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/samuelbovef/suporte)
 
 </div>
 
-Distribuído sob a licença **MIT**. É permitida a utilização, modificação e distribuição comercial deste código, desde que mantidos os avisos de direitos autorais originais.
+---
+
+Distribuído sob a licença **MIT**. É permitida a utilização, modificação e distribuição comercial, desde que mantidos os avisos originais.
