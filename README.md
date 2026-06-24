@@ -168,12 +168,12 @@ Contribuições para o aprimoramento da ferramenta são bem-vindas:
 
 ## Contato
 
-Para reporte de bugs, dúvidas sobre a configuração do ambiente ou discussões sobre parcerias comerciais, entre em contato:
+Para reporte de bugs, dúvidas sobre a configuração do ambiente ou discussões sobre parcerias corporativas, acesse nosso portal de suporte clicando no botão abaixo:
 
-[![WhatsApp de Suporte](https://img.shields.io/badge/Falar_sobre_o_projeto-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=1a1a1a)](https://wa.me/5534984241729)
+<div align="center">
 
----
+[![Solicitar Chave de Acesso](https://img.shields.io/badge/PORTAL_DE_SUPORTE_E_ACESSO-00FF9C?style=for-the-badge&logo=rocket&logoColor=black&labelColor=1a1a1a)](https://suporte-seriais.pages.dev/)
 
-## Licença
+</div>
 
 Distribuído sob a licença **MIT**. É permitida a utilização, modificação e distribuição comercial deste código, desde que mantidos os avisos de direitos autorais originais.
