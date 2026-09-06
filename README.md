@@ -168,7 +168,7 @@ Contribuições para o aprimoramento da ferramenta são bem-vindas:
 
 ## Suporte e Serviços
 
-Para negociação de parcerias, serviços de **Consultoria de Implantação** ou atendimento comercial, acesse a minha Central.
+Precisou de ajuda com dúvidas, erros ou suporte? Acesse a Central para abrir um protocolo de atendimento.
 
 <div align="center">
 
